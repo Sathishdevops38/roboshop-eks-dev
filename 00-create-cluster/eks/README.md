@@ -4,7 +4,7 @@
 This repository contains Terraform scripts to create an Amazon EKS cluster. The setup includes VPC, subnets, security groups, IAM roles, and the EKS cluster itself.
 
 
-### change below values 
+### Give below values 
 * domain_name = ""
 * allowed_account_ids = [] enter aws account id
 * reamin values refer terraform tfvars based the terraform workspace enviornmenr will be picked 
