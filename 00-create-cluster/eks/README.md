@@ -7,7 +7,13 @@ This repository contains Terraform scripts to create an Amazon EKS cluster. The 
 ### Give below values 
 * domain_name = ""
 * allowed_account_ids = [] enter aws account id
-* reamin values refer terraform tfvars based the terraform workspace enviornmenr will be picked 
+* reamin values refer terraform tfvars based the terraform workspace enviornmenr will be picked
+
+### In terraform.tfvars 
+* to access cluster you can aws iam users below
+ admin = {
+        user_arn = ["arn:aws:iam::AWSACCOUNTNUMBER:ANYUSER"]
+      }
 
 ## Medium and Youtube Article Link:
 - [Read the detailed guide on Medium](https://medium.com/@ravindrasinghh/create-an-eks-cluster-using-terraform-329b9dde068f)
