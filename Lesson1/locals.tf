@@ -26,7 +26,7 @@ locals {
     viewer = "arn:aws:eks::aws:cluster-access-policy/AmazonEKSViewPolicy",
     admin  = "arn:aws:eks::aws:cluster-access-policy/AmazonEKSClusterAdminPolicy"
   }
-  project    = "codedevops"
+  project    = "roboshop"
   account_id = data.aws_caller_identity.current.account_id
   default_tags = {
     environment = local.environment

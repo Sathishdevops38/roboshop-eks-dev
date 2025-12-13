@@ -23,6 +23,6 @@ server:
       nlb.ingress.kubernetes.io/scheme: internet-facing
       nlb.ingress.kubernetes.io/target-type: instance
       nlb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}, {"HTTPS": 443}]'
-      nlb.ingress.kubernetes.io/certificate-arn: "arn:aws:acm:ap-south-1:434605749312:certificate/50eeb484-0d88-4617-bdf6-1d339f2f3b48"
+      nlb.ingress.kubernetes.io/certificate-arn: "arn:aws:acm:us-west-2:434605749312:certificate/50eeb484-0d88-4617-bdf6-1d339f2f3b48"
     hosts:
       - argo.codedevops.cloud

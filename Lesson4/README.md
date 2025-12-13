@@ -43,7 +43,7 @@ server:
       nlb.ingress.kubernetes.io/scheme: internet-facing
       nlb.ingress.kubernetes.io/target-type: instance
       nlb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}, {"HTTPS": 443}]'
-      nlb.ingress.kubernetes.io/certificate-arn: "arn:aws:acm:ap-south-1:434605749312:certificate/50eeb484-0d88-4617-bdf6-1d339f2f3b48"
+      nlb.ingress.kubernetes.io/certificate-arn: "arn:aws:acm:us-west-2:434605749312:certificate/50eeb484-0d88-4617-bdf6-1d339f2f3b48"
     hosts:
       - argo.codedevops.cloud
 ```
@@ -78,7 +78,7 @@ server:
     url: "https://argo.codedevops.cloud"   
     oidc.config: |
         name: admin
-        issuer: https://cognito-idp.ap-south-1.amazonaws.com/ap-south-1_YEwPaQA4Q  # Replace with your AWS SSO Issuer URL
+        issuer: https://cognito-idp.us-west-2.amazonaws.com/us-west-2_YEwPaQA4Q  # Replace with your AWS SSO Issuer URL
         clientID: 3f8r6j111qidd2c2ft9rmh4vu    # Replace with your AWS SSO Client ID
         clientSecret: 1gpls5t1pm3gjg3rfltsja6b # Replace with your AWS SSO Client Secret
         redirectUrI: https://argo.codedevops.cloud/api/dex/callback
@@ -95,7 +95,7 @@ server:
       nlb.ingress.kubernetes.io/scheme: internet-facing
       nlb.ingress.kubernetes.io/target-type: instance
       nlb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}, {"HTTPS": 443}]'
-      nlb.ingress.kubernetes.io/certificate-arn: "arn:aws:acm:ap-south-1:434605749312:certificate/50eeb484-0d88-4617-bdf6-1d339f2f3b48"
+      nlb.ingress.kubernetes.io/certificate-arn: "arn:aws:acm:us-west-2:434605749312:certificate/50eeb484-0d88-4617-bdf6-1d339f2f3b48"
     hosts:
       - argo.codedevops.cloud
 ```

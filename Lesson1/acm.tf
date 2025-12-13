@@ -1,9 +1,9 @@
 module "acm_backend" {
   source      = "terraform-aws-modules/acm/aws"
   version     = "4.0.1"
-  domain_name = "codedevops.cloud"
+  domain_name = "daws38sat.fun"
   subject_alternative_names = [
-    "*.codedevops.cloud"
+    "*.daws38sat.fun"
   ]
   zone_id             = data.aws_route53_zone.main.id
   validation_method   = "DNS"
@@ -14,6 +14,6 @@ module "acm_backend" {
 }
 
 data "aws_route53_zone" "main" {
-  name = "codedevops.cloud." # Ensure the domain name ends with a dot
+  name = "daws38sat.fun." # Ensure the domain name ends with a dot
 
 }

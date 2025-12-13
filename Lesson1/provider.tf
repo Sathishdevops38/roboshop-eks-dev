@@ -1,8 +1,8 @@
 terraform {
   backend "s3" {
-    bucket = "devsecops-backend-codedevops"
-    key    = "secops-dev.tfstae"
-    region = "ap-south-1"
+    bucket = "terraform-backend-86"
+    key    = "roboshop-eks"
+    region = "us-west-2"
   }
 }
 terraform {
@@ -24,7 +24,7 @@ terraform {
 }
 provider "aws" {
   region              = var.region
-  allowed_account_ids = [434605749312]
+  allowed_account_ids = [441700732169]
 
   default_tags {
     tags = local.default_tags
