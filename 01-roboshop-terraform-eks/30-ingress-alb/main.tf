@@ -3,7 +3,7 @@ module "ingress_alb" {
   name = local.alb_name
   project_name = var.project_name
   environment = var.environment
-  security_groups = local.frontend_lb_sg_id
+  security_groups = local.ingress_lb_sg_id
   subnets = local.public_subnet_id
   alb_tags = var.alb_tags
   load_balancer_type = var.load_balancer_type
