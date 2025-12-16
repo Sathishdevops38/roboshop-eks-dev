@@ -15,7 +15,7 @@ variable "sg_name" {
         # bastion
         "bastion",
         # frontend load balancer
-        "ingress_alb",
+        "ingress_lb",
         #vpn sg 
         "openvpn",
         #eks Cp cluster
