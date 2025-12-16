@@ -37,7 +37,7 @@ variable "alb_tg_tags"{
 }
 
 variable "zone_id" {
-  default = "Z05700624Q21KABEP00F"
+  default = "Z041507112WH8TKZP9NS3"
 }
 
 variable "domain_name" {
