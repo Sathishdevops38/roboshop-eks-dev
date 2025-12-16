@@ -1,5 +1,5 @@
 module "this" {
-  source = "git::https://github.com/Sathishdevops38/terraform-modules.git//00-vpc_module?ref=main"
+  source = "git::https://github.com/Sathishdevops38/terraform-modules.git//00-vpc-module?ref=main"
   cidr = var.vpc_cidr
   project_name = var.project_name
   environment = var.environment
