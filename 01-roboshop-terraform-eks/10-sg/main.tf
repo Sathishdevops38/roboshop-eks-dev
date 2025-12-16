@@ -10,7 +10,7 @@
 
 #using own module
 module "this" {
-  source = "git::https://github.com/Sathishdevops38/terraform-modules.git//10-sg_module?ref=main"
+  source = "git::https://github.com/Sathishdevops38/terraform-modules.git//10-sg-module?ref=main"
   count = length(var.sg_name)
   sg_name = var.sg_name[count.index]
   description = "Created for ${var.sg_name[count.index]}"
